@@ -1,12 +1,7 @@
 🚀 Professional Portfolio Website - Diwansh Sood
-![Portfolio Preview](https://imgio/badge/HTML5-E34F26?style=flat](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor portfolio website showcasing my expertise as a Full-Stack Developer, UI/UX Designer, and DevOps Engineer. Built with vanilla web technologies and optimized for performance and user experience.
+![Portfolio Preview](https://my-portfolio-rho-sage-78.vercel.app/)portfolio website showcasing my expertise as a Full-Stack Developer, UI/UX Designer, and DevOps Engineer. Built with vanilla web technologies and optimized for performance and user experience.
 
-🌟 Live Demo
-View Live Portfolio (Replace with your actual URL)
 
-📸 Screenshots
-Desktop View	Mobile View	Dark Mode
-![Desktop](screenshotss		
 🎨 Design & UX
 Responsive Design - Fully optimized for all devices (mobile, tablet, desktop)
 
@@ -200,7 +195,7 @@ Go to Settings > Pages
 
 Select source branch (main/master)
 
-Your site will be live at https://diwansh12.github.io/repository-name
+Your site will be live at https://my-portfolio-rho-sage-78.vercel.app/
 
 📈 SEO Features
 Meta Tags - Proper title, description, and keywords
