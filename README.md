@@ -1,5 +1,5 @@
 🚀 Professional Portfolio Website - Diwansh Sood
-![Portfolio Preview](https://my-portfolio-rho-sage-78.vercel.app/)portfolio website showcasing my expertise as a Full-Stack Developer, UI/UX Designer, and DevOps Engineer. Built with vanilla web technologies and optimized for performance and user experience.
+(https://my-portfolio-rho-sage-78.vercel.app/)portfolio website showcasing my expertise as a Full-Stack Developer, UI/UX Designer, and DevOps Engineer. Built with vanilla web technologies and optimized for performance and user experience.
 
 
 🎨 Design & UX
