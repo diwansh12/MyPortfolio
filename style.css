@@ -1060,3 +1060,272 @@ footer {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+/* Enhanced Hero Image Styles - Professional Static Version */
+.hero-image-container {
+    position: relative;
+    margin-bottom: 3rem;
+    z-index: 2;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+/* Static Professional Background - No Rotation */
+.hero-image-bg-effect {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(135deg, 
+        rgba(102, 126, 234, 0.3) 0%, 
+        rgba(118, 75, 162, 0.3) 50%, 
+        rgba(139, 92, 246, 0.3) 100%);
+    border-radius: 50%;
+    filter: blur(2px);
+    opacity: 0.8;
+    /* REMOVED: animation: rotate 10s linear infinite; */
+}
+
+/* Professional Ring Effect - Subtle Animation */
+.hero-image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 2px solid transparent;
+    border-top: 2px solid rgba(255, 255, 255, 0.6);
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    animation: gentleRotate 8s linear infinite;
+    z-index: 0;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.25),
+        0 10px 25px rgba(0, 0, 0, 0.15),
+        inset 0 0 0 3px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+/* Professional Hover Effect - No Rotation */
+.hero-image:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 
+        0 35px 70px rgba(0, 0, 0, 0.3),
+        0 15px 35px rgba(0, 0, 0, 0.2),
+        inset 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+/* Refined Availability Indicator */
+.hero-image-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.availability-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    animation: subtlePulse 2s infinite;
+}
+
+/* Floating Tech Icons - Reduced Motion */
+.floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.floating-icon {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: white;
+    animation: subtleFloat 4s ease-in-out infinite;
+    opacity: 0.9;
+}
+
+.tech-icon-1 {
+    top: 15%;
+    left: -12%;
+    animation-delay: 0s;
+    color: #61dafb;
+}
+
+.tech-icon-2 {
+    top: 65%;
+    right: -12%;
+    animation-delay: 1.5s;
+    color: #68a063;
+}
+
+.tech-icon-3 {
+    bottom: 25%;
+    left: -8%;
+    animation-delay: 3s;
+    color: #f7df1e;
+}
+
+/* Refined Animations - Subtle and Professional */
+@keyframes gentleRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes subtlePulse {
+    0%, 100% { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+    50% { 
+        opacity: 0.7; 
+        transform: scale(1.1); 
+    }
+}
+
+@keyframes subtleFloat {
+    0%, 100% { 
+        transform: translateY(0px); 
+        opacity: 0.8;
+    }
+    50% { 
+        transform: translateY(-8px); 
+        opacity: 1;
+    }
+}
+
+/* Professional Glow Effect on Hover */
+.hero-image-container:hover .hero-image-bg-effect {
+    opacity: 1;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-image-wrapper {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .floating-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-image-overlay {
+        bottom: 5px;
+        right: 5px;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .availability-indicator {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-image-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .floating-elements {
+        display: none;
+    }
+    
+    .hero-image-overlay {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .hero-image-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .floating-elements {
+        display: none; /* Hide floating elements on small screens */
+    }
+}
+.hero-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: particleFloat 8s infinite linear;
+}
+.hero-image-frame {
+    position: absolute;
+    inset: -30px;
+    background: linear-gradient(45deg, 
+        rgba(255, 255, 255, 0.1), 
+        rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    backdrop-filter: blur(20px);
+}
